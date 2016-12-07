@@ -22,24 +22,24 @@
   </head>
   <body>
     <div class="container col-lg-3 col-md-4 col-sm-6 col-xs-10" id="signup">
-    <form id="signupForm" method="POST" action="php/signup.php" onsubmit="return validateSignup();">
-        <div class="form-group">
+    <form method="POST" action="php/signup.php" onsubmit="return Validatesignup()">
+        <div class="form-group" id="div_name">
             <label for="name">Name:</label>
-            <input type="text" class="form-control" name="name" id="name" placeholder="Enter your fullname">
+            <input type="text" class="form-control" placeholder="Enter your fullname" id="name">
         </div>
         <div class="form-group">
             <label for="email">Email:</label>
-            <input type="email" class="form-control" name="email" id="email" placeholder="email@example.com">
+            <input type="email" class="form-control" placeholder="email@example.com">
         </div>
-        <div class="form-group">
+        <div class="form-group" id="div_username">
             <label for="username">Username:</label>
-            <input type="text" class="form-control" name="username" id="username" placeholder="Choose your username">
+            <input type="text" class="form-control" placeholder="Choose your username" id="username">
         </div>
-        <div class="form-group">
+        <div class="form-group" id="div_password">
             <label for="password">Password:</label>
-            <input type="password" class="form-control" name="password" id="password" placeholder="Please choose strong password">
+            <input type="password" class="form-control" placeholder="Please choose strong password" id="password">
         </div>
-        <button type="submit" class="btn btn-default btn-success" id="signupbtn">SignUp</button>
+        <input type="submit" value="Submit">
     </form>
     </div>
     <h1 id="signature"><em>$Be ready to find world's darkest secrets!</em></h1>
@@ -49,6 +49,6 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <!-- Validators -->
-    <script type="text/javascript" src="signup.js"></script>
+    <script type="text/javascript" src="js/signup.js"></script>
   </body>
 </html>
