@@ -21,12 +21,13 @@
     <![endif]-->
   </head>
   <body>
+    <!-- Bootstrap Form -->
     <div class="container col-lg-3 col-md-4 col-sm-6 col-xs-10" id="signup">
     <form method="POST" action="php/signup.php" onsubmit="return Validatesignup()">
         <div class="form-group" id="div_name">
             <label for="name">Name:</label>
             <input type="text" class="form-control" placeholder="Enter your fullname" id="name">
-        </div> //Name inputfield
+        </div>
         <div class="form-group">
             <label for="email">Email:</label>
             <input type="email" class="form-control" placeholder="email@example.com">
@@ -34,21 +35,16 @@
         <div class="form-group" id="div_username">
             <label for="username">Username:</label>
             <input type="text" class="form-control" placeholder="Choose your username" id="username">
-        </div> //Username inputfield
+        </div>
         <div class="form-group" id="div_password">
             <label for="password">Password:</label>
             <input type="password" class="form-control" placeholder="Please choose strong password" id="password">
-        </div> //Password inputfield
+        </div>
         <input type="submit" value="Submit">
     </form>
-    </div> //Bootstrap form
+    </div>
     <h1 id="signature"><em>$Be ready to find world's darkest secrets!</em></h1>
 
-    
-    
-    
-    
-    
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
